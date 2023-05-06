@@ -56,8 +56,8 @@ export const Banner = () => {
               {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                   <span className="tagline">Bienvenido a mi Portfolio</span>
-                  <h1>{`Hola, soy Ariel. `} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Front-End Dev", "Back-End Dev", "Tester"  ]'><span className="wrap">{text}</span></span></h1>
-                  <p>Un gusto conocerte! <br /> Soy un educador del sector mecánico y de matemática, al que le gusta la codificación de software para resolver situaciones problemáticas. <br /> Hoy en día como desarrollador FULL STACK soy capaz de generar una interfaz de diseño agradable e intuitiva, al mismo tiempo que realizar un manejo confiable de los datos de la web, como así también generar tu página web o mejorar/actualizar tu actual, realizar soporte de la misma y mejorar sus servicios.</p>
+                  <h1>{`Hola, soy Ariel. `} <br />  <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Front-End Dev", "Back-End Dev", "Tester"  ]'><span className="wrap">{text}</span></span></h1>
+                  <p className="banner__p">Un gusto conocerte! <br /> Soy un educador del sector mecánico y de matemática, al que le gusta la codificación de software para resolver situaciones problemáticas. <br /> Hoy en día como desarrollador FULL STACK soy capaz de generar una interfaz de diseño agradable e intuitiva, al mismo tiempo que realizar un manejo confiable de los datos de la web, como así también generar tu página web o mejorar/actualizar tu actual, realizar soporte de la misma y mejorar sus servicios.</p>
 
                   <button >
                     Conectémonos

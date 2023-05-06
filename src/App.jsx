@@ -5,7 +5,7 @@ import { Skills } from "./components/Skills";
 import { Projects } from "./components/Projects";
 import { Contact } from "./components/Contact";
 import { Footer } from "./components/Footer";
-import { NavBar } from './components/Navbar';
+import { NavBar } from "./components/NavBar"
 
 function App() {
   return (
