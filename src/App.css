@@ -775,3 +775,31 @@ body::-webkit-scrollbar-thumb {
   border: 1px solid #4A2FBD;
   /* creates padding around scroll thumb */
 }
+
+ul {
+  width: 50vw;
+  margin-left: 30px;
+}
+
+.list {
+  display: flex;
+  color: #fff;
+}
+
+.list a span {
+  transform: rotate(145deg);
+}
+
+.list a span:hover {
+  transform: rotate(145deg) scale(1.2);
+  filter: drop-shadow(1px 1px #fff);
+}
+
+.list ~ h6{
+  margin-bottom: 40px;
+}
+
+.world_icon{
+  color: #AA367C;
+  font-weight: 300;
+}

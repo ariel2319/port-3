@@ -40,10 +40,10 @@ export const Skills = () => {
 
   const certificates = [
     { "id": 1, "title": "Desarrollador WEB Full Stack", "institute": "ACADEMLO", "link": "https://certificates.academlo.com/en/verify/39296980516484" },
-    { "id": 2, "title": "Desarrollador Back End", "institute": "ACADEMLO", "link": "https://certificates.academlo.com/en/verify/28934805167606" },
-    { "id": 3, "title": "Desarrollador Front End", "institute": "ACADEMLO", "link": "https://certificates.academlo.com/en/verify/32616498903202" },
-    { "id": 4, "title": "Fundamento en HTML, CSS and JavaScript", "institute": "ACADEMLO", "link": "https://certificates.academlo.com/en/verify/87979266497188" },
-    { "id": 5, "title": "Testing Manual, Ágil y con Herramientas", "institute": "", "link": "https://documentcloud.adobe.com/gsuiteintegration/index.html?state=%7B%22ids%22%3A%5B%221AEvHNTW4bIEP_R2ATMxN9tMWz4-hgebO%22%5D%2C%22action%22%3A%22open%22%2C%22userId%22%3A%22112512721761573156683%22%2C%22resourceKeys%22%3A%7B%7D%7D" }
+    { "id": 2, "title": "Testing Manual, Ágil y con Herramientas", "institute": "", "link": "https://documentcloud.adobe.com/gsuiteintegration/index.html?state=%7B%22ids%22%3A%5B%221AEvHNTW4bIEP_R2ATMxN9tMWz4-hgebO%22%5D%2C%22action%22%3A%22open%22%2C%22userId%22%3A%22112512721761573156683%22%2C%22resourceKeys%22%3A%7B%7D%7D" },
+    { "id": 3, "title": "Desarrollador Back End", "institute": "ACADEMLO", "link": "https://certificates.academlo.com/en/verify/28934805167606" },
+    { "id": 4, "title": "Desarrollador Front End", "institute": "ACADEMLO", "link": "https://certificates.academlo.com/en/verify/32616498903202" },
+    { "id": 5, "title": "Fundamento en HTML, CSS and JavaScript", "institute": "ACADEMLO", "link": "https://certificates.academlo.com/en/verify/87979266497188" }
   ]
 
   return (
