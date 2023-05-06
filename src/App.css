@@ -80,7 +80,7 @@ select:focus {
   outline: none;
 }
 
-@media (min-width:1700px) {
+@media (min-width:1500px) {
   main .container {
     max-width: 100%;
     padding: 0 150px;
@@ -278,7 +278,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background-size: cover;
   background-repeat: no-repeat;
 
-/*   transform: rotateY(180deg); */
+  /*   transform: rotateY(180deg); */
 }
 
 .banner .tagline {
@@ -309,7 +309,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 96%;
 
   background: rgba(74, 47, 106, 0.3);
-  background: radial-gradient(at right center, rgba(74, 47, 106, 0.2), rgba(3, 3, 3, 0.2));;
+  background: radial-gradient(at right center, rgba(74, 47, 106, 0.2), rgba(3, 3, 3, 0.2));
+  ;
   padding: 5px;
   border-radius: 15px;
 }
@@ -374,10 +375,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .skill-bx {
   background: rgba(74, 47, 106, 0.1);
-  background: radial-gradient(at right center, rgba(74, 47, 106, 0.7), rgba(3, 3, 3, 0.7));;
+  background: radial-gradient(at right center, rgba(74, 47, 106, 0.7), rgba(3, 3, 3, 0.7));
+  ;
   border-radius: 64px;
   text-align: center;
-  padding: 60px 50px;
+  padding: 40px 25px;
   margin-top: -60px;
 }
 
@@ -419,16 +421,16 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /************ Projects Css ************/
 .project {
-  padding: 80px 0;
+  padding: 60px 0;
   position: relative;
   /* background-color: black; */
   background: rgba(74, 47, 106, 1.0);
-  background: radial-gradient(at right center, rgba(74, 47, 106, 0.5), rgba(3, 3, 3, 1.0));;
+  background: radial-gradient(at right center, rgba(74, 47, 106, 0.5), rgba(3, 3, 3, 1.0));
 }
 
 .project h2 {
   font-size: 45px;
-  font-weight: 700;
+  font-weight: 600;
   text-align: center;
 }
 
@@ -539,6 +541,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   transition: 0.5s ease-in-out;
   opacity: 0;
   width: 100%;
+}
+
+.proj-txtx,
+a,
+a::before,
+a::after {
+  color: #fff;
 }
 
 .proj-imgbx:hover .proj-txtx {
@@ -747,4 +756,22 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .logo2 {
   filter: invert(100%);
   transform: scale(1.5);
+}
+
+body::-webkit-scrollbar {
+  width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+  background: linear-gradient(45deg, #AA367C -5.91%, #4A2FBD 111.58%);
+  /*   border: 1px solid var(--accent-200); */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #000;
+  /* color of the scroll thumb */
+  border-radius: 20px;
+  /* roundness of the scroll thumb */
+  border: 1px solid #4A2FBD;
+  /* creates padding around scroll thumb */
 }

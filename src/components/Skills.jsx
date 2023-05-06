@@ -13,6 +13,8 @@ import express from '../assets/img/technology/express.png'
 import colorSharp from "../assets/img/color-sharp.png"
 import '../styles/skills-style.css'
 import 'animate.css';
+import { Key } from 'react-bootstrap-icons';
+import Courses from '../components/Courses';
 
 export const Skills = () => {
   const responsive = {
@@ -35,6 +37,15 @@ export const Skills = () => {
     }
   };
 
+
+  const certificates = [
+    { "id": 1, "title": "Desarrollador WEB Full Stack", "institute": "ACADEMLO", "link": "https://certificates.academlo.com/en/verify/39296980516484" },
+    { "id": 2, "title": "Desarrollador Back End", "institute": "ACADEMLO", "link": "https://certificates.academlo.com/en/verify/28934805167606" },
+    { "id": 3, "title": "Desarrollador Front End", "institute": "ACADEMLO", "link": "https://certificates.academlo.com/en/verify/32616498903202" },
+    { "id": 4, "title": "Fundamento en HTML, CSS and JavaScript", "institute": "ACADEMLO", "link": "https://certificates.academlo.com/en/verify/87979266497188" },
+    { "id": 5, "title": "Testing Manual, Ágil y con Herramientas", "institute": "", "link": "https://documentcloud.adobe.com/gsuiteintegration/index.html?state=%7B%22ids%22%3A%5B%221AEvHNTW4bIEP_R2ATMxN9tMWz4-hgebO%22%5D%2C%22action%22%3A%22open%22%2C%22userId%22%3A%22112512721761573156683%22%2C%22resourceKeys%22%3A%7B%7D%7D" }
+  ]
+
   return (
     <section className="skill" id="skills">
       <div className="container">
@@ -43,47 +54,23 @@ export const Skills = () => {
             <div className="skill-bx wow zoomIn">
 
 
-              <h3 className='sub-title'> Resumen Académico </h3>
-              <div className="animate__animated animate__fadeIn">
-                <span className="tagline">Bienvenido a mi Portfolio</span>
-              </div>
+              <h2 className='sub-title'> Resumen Académico </h2>
 
-              <ul>
-                <li>
-                  <h4 className='title-h4'>
-                    <span className='point-span'>📌</span>
-                    <a href="https://certificates.academlo.com/en/verify/39296980516484" target={'_blank'}>
-                      Desarrollador WEB FULL STACK
-                    </a>
-                  </h4>
-                  <p>Institución: <b> ACADEMLO </b></p>
-                </li>
-
-                <li>
-                  <h4 className='title-h4'><span className='point-span'> 📌</span> <a href="https://certificates.academlo.com/en/verify/28934805167606" target={'_blank'}>   Desarrollador BACK END</a></h4>
-                  <p>Institución: <b> ACADEMLO </b> </p>
-                </li>
-
-                <li>
-                  <h4 className='title-h4'><span className='point-span'> 📌</span><a href="https://certificates.academlo.com/en/verify/32616498903202" target={'_blank'}> Desarrollador FRONT END</a></h4>
-                  <p>Institución: <b> ACADEMLO </b></p>
-                </li>
-
-                <li>
-                  <h4 className='title-h4'><span className='point-span'>📌 </span> <a href="https://certificates.academlo.com/en/verify/87979266497188" target={'_blank'}>Fundamento en HTML, CSS and JavaScript</a></h4>
-                  <p>Institución: <b> ACADEMLO </b></p>
-                </li>
-
-                <li>
-                  <h4 className='title-h4'><span className='point-span'>📌 </span> <a>Profesorado para Técnicos en Base al Título de Procedencia <br /> (en proceso) </a> </h4>
-                  <p>Institución: <b> IES 9-007 </b></p>
-                </li>
-
-              </ul>
+              {
+                certificates.map((course) => {
+                  return (
+                    <ul>
+                      <Courses
+                        key={course.id}
+                        {...course}
+                      />
+                    </ul>
+                  )
+                })
+              }
 
 
-
-
+              <h2 className='sub-title'> Hard Skills </h2>
               <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
 
                 <div className="item">

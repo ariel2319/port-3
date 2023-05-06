@@ -15,9 +15,9 @@ export const Footer = () => {
           </Col>
           <Col size={12} sm={6} className="text-center text-sm-end">
             <div className="social-icon">
-              <a href="https://www.linkedin.com/in/ariel-alejandro-maldonado-68276224b/" target={'_blank'}><img src={navIcon1} alt="Icon" className="logo2"/></a>
-              <a href="https://github.com/ariel2319" target={'_blank'}> <img src={navIcon2} alt="Icon" className="logo2"/></a>
-              <a href="https://docs.google.com/document/d/12jyQJqI8lo5VqC_VeA9iFCR5ZR_zT-UM/edit?usp=sharing&ouid=112512721761573156683&rtpof=true&sd=true" target={'_blank'}><img src={navIcon3} alt="Icon" className="logo2"/></a>
+              <a href="https://www.linkedin.com/in/ariel-alejandro-maldonado-68276224b/" target={'_blank'}><img src={navIcon1} alt="Icon" className="logo2" /></a>
+              <a href="https://github.com/ariel2319" target={'_blank'}> <img src={navIcon2} alt="Icon" className="logo2" /></a>
+              <a href='../../public/CV - Maldonado Ariel aam.pdf' target={'_blank'}><img src={navIcon3} alt="Icon" className="logo2" /></a>
             </div>
             <p>Copyright 2023. Los derechos reservados</p>
           </Col>
