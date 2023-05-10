@@ -1,10 +1,26 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import contactImg from "../assets/img/contact-img.svg";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
+import emailjs from 'emailjs-com';
 
 export const Contact = () => {
+
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    /* emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_PUBLIC_KEY') */
+    emailjs.sendForm('service_dhku58c', 'template_qgdzvvh', form.current, 'C1Rz2JHdiGLYzvsGG')
+
+      .then(() => {
+        alert('Your email was sent successfully! ')
+      }, (error) => {
+        alert(error.text);
+      });
+  };
+
   const formInitialDetails = {
     firstName: '',
     lastName: '',
@@ -59,30 +75,27 @@ export const Contact = () => {
               {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                   <h2>Contáctame</h2>
-                  <form onSubmit={handleSubmit}>
+                  <form onSubmit={sendEmail} ref={form}>
                     <Row>
+
                       <Col size={12} sm={6} className="px-1">
-                        <input type="text" value={formDetails.firstName} placeholder="Nombre" onChange={(e) => onFormUpdate('firstName', e.target.value)} />
+                        <input type="text" name="user_name" placeholder="Nombre" />
                       </Col>
+
                       <Col size={12} sm={6} className="px-1">
-                        <input type="text" value={formDetails.lasttName} placeholder="Apellido" onChange={(e) => onFormUpdate('lastName', e.target.value)} />
+                        <input type="email" name="user_email" placeholder="Email" />
                       </Col>
-                      <Col size={12} sm={6} className="px-1">
-                        <input type="email" value={formDetails.email} placeholder="Email" onChange={(e) => onFormUpdate('email', e.target.value)} />
-                      </Col>
-                      <Col size={12} sm={6} className="px-1">
-                        <input type="tel" value={formDetails.phone} placeholder="Teléfono" onChange={(e) => onFormUpdate('phone', e.target.value)} />
-                      </Col>
+
                       <Col size={12} className="px-1">
-                        <textarea rows="6" value={formDetails.message} placeholder="Mensaje" onChange={(e) => onFormUpdate('message', e.target.value)}></textarea>
+                        <textarea rows="6" value={formDetails.message} placeholder="Mensaje" ></textarea>
                         <button type="submit"><span>{buttonText}</span></button>
                       </Col>
-                      {
+                      {/* {
                         status.message &&
                         <Col>
                           <p className={status.success === false ? "danger" : "success"}>{status.message}</p>
                         </Col>
-                      }
+                      } */}
                     </Row>
                   </form>
                 </div>}

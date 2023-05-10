@@ -1,8 +1,9 @@
-import { Container, Row, Col } from "react-bootstrap";
-import logo from "../assets/img/logo.svg";
+import { Container, Row, Col, Navbar } from "react-bootstrap";
 import navIcon1 from "../assets/img/nav-linkedin.svg";
 import navIcon2 from "../assets/img/nav-github.svg";
 import navIcon3 from "../assets/img/nav-card.svg";
+import Logo from '../components/Logo'
+import '../styles/logo.css'
 
 export const Footer = () => {
   return (
@@ -11,7 +12,12 @@ export const Footer = () => {
         <Row className="align-items-center">
           {/* <MailchimpForm /> */}
           <Col size={12} sm={6}>
-            <img src={logo} alt="Logo" />
+
+            <Navbar.Brand href="/">
+              <div className="logo_footer">
+                <Logo />
+              </div>
+            </Navbar.Brand>
           </Col>
           <Col size={12} sm={6} className="text-center text-sm-end">
             <div className="social-icon">

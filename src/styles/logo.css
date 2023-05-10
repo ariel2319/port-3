@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Foldit:wght@200;300;400;500;700&display=swap');
+
+.logo-p {
+  letter-spacing: 6px;
+ /*  border: 4px double rgba(170, 54, 124, 0.5);
+ */  color: rgba(203, 5, 253, 0.1);
+  border-width: 6px 0;
+  margin: 3px;
+  margin-bottom: 2px;
+  font-weight: 500;
+  font-size: 22px;
+  text-align: center;
+  width: 230px;
+}
+
+.logo-span {/* 
+  font: 700 22px "Oswald", sans-serif; */
+  font-family: 500 30px "Foldit", cursive;
+  letter-spacing: 2px;
+  margin: 2px;
+  text-shadow: 0 0 80px rgba(255, 255, 255, .5);
+
+  /* Clip Background Image */
+  background-image: linear-gradient(to right, rgba(203, 5, 253, 0.1) 0%, rgba(252, 249, 248, 0.2) 100%), url(https://c.wallhere.com/photos/76/50/stripes_heart-94261.jpg!d);
+  background-repeat: repeat-y;
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  /* Animate Background Image */
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: aitf 80s linear infinite;
+
+  /* Activate hardware acceleration for smoother animations */
+  -webkit-transform: translate3d(0, 0, 0);
+  -webkit-backface-visibility: hidden;
+}
+
+
+/* Animate Background Image */
+@-webkit-keyframes aitf {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+.logo_footer{
+  transform: scale(1.4);
+}
