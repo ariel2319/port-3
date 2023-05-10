@@ -53,7 +53,7 @@ export const NavBar = () => {
               <div className="social-icon">
                 <a href="https://www.linkedin.com/in/ariel-alejandro-maldonado-68276224b/" target={'_blank'}><img src={navIcon1} alt="" className="logo2" /></a>
                 <a href="https://github.com/ariel2319" target={'_blank'}><img src={navIcon2} alt="" className="logo2" /></a>
-                <a href="../../public/CV - Maldonado Ariel aam.pdf" target={'_blank'}><img src={navIcon3} alt="" className="logo2" /></a>
+                <a href="../../public/CV - Maldonado Ariel aam.pdf" target={'_blank'} download ><img src={navIcon3} alt="" className="logo2" /></a>
               </div>
               <HashLink to='#connect'>
                 <button className="vvd"><span>Conectémonos</span></button>

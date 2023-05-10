@@ -23,7 +23,7 @@ export const Footer = () => {
             <div className="social-icon">
               <a href="https://www.linkedin.com/in/ariel-alejandro-maldonado-68276224b/" target={'_blank'}><img src={navIcon1} alt="Icon" className="logo2" /></a>
               <a href="https://github.com/ariel2319" target={'_blank'}> <img src={navIcon2} alt="Icon" className="logo2" /></a>
-              <a href='../../public/CV - Maldonado Ariel aam.pdf' target={'_blank'}><img src={navIcon3} alt="Icon" className="logo2" /></a>
+              <a href='../../public/CV - Maldonado Ariel aam.pdf' target={'_blank'} download  ><img src={navIcon3} alt="Icon" className="logo2" /></a>
             </div>
             <p>Copyright 2023. Los derechos reservados</p>
           </Col>
